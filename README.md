@@ -7,7 +7,10 @@ Upstream: https://github.com/github/lfs-test-server
 
 1. [**Install docker**](https://docs.docker.com/installation/)
 1. **Download and start the lfs-test-server instance**  
-`docker run --name lfs -p 9999:9999 -d l3iggs/lfs-test-server`
+
+  ```
+docker run --name lfs -p 9999:9999 -d l3iggs/lfs-test-server
+```
 1. **Add a user via the server's web interface**  
 Point your browser to http://localhost:9999/mgmt  
 (the default user/pass is admin/admin)  
