@@ -12,7 +12,7 @@ Upstream: https://github.com/github/lfs-test-server
 docker run --name lfs -p 9999:9999 -d l3iggs/lfs-test-server
 ```
 1. **Add a user via the server's web interface**  
-Point your browser to http://localhost:9999/mgmt  
+Point your browser to https://localhost:9999/mgmt  
 (the default user/pass is admin/admin)  
 1. [**Install the LFS plugin for git**](https://git-lfs.github.com/)
 1. **Tell your git repository about your new LFS server**  
@@ -20,7 +20,7 @@ Add the following to your the .gitconfig file in your git repository:
 
   ```
 [lfs]
-    url = "http://localhost:9999/janedoe/lfsrepo"
+    url = "https://localhost:9999/janedoe/lfsrepo"
 ```
 Where `janedoe` is the user you created in the LFS server's web interface above and `lfsrepo` keeps track of where your large files for this repository should be stored on the server.
 1. **Tell your git repositroy which files should be tracked with LFS**
