@@ -6,3 +6,7 @@ RUN sudo pacman -Sy
 
 # install lfs-test-server
 RUN sudo pacman -S --needed --noconfirm git-lfs-test-server-git
+
+# start server
+ADD run.sh /root/run.sh
+CMD ["sudo","-E","bash /root/run.sh"]
