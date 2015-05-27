@@ -14,14 +14,16 @@ set -o pipefail
 #LFS_KEY         # tls key
 #LFS_SCHEME      # set to 'https' to override default http
 
-LFS_LISTEN="tcp://:9999"
-LFS_HOST="127.0.0.1:9999"
-LFS_CONTENTPATH="content"
-LFS_ADMINUSER="l3iggs"
-LFS_ADMINPASS="sggi3l"
-#LFS_CERT="mine.crt"
-#LFS_KEY="mine.key"
-#LFS_SCHEME="https"
+
+: ${LFS_LISTEN:="tcp://:9999"}
+: ${LFS_HOST:="localhost:9999"}
+: ${LFS_METADB:=""}
+: ${LFS_CONTENTPATH:=content}
+: ${LFS_ADMINUSER:="l3iggs"}
+: ${LFS_ADMINPASS:="sggi3l"}
+: ${LFS_CERT:=""}
+: ${LFS_KEY:=""}
+: ${LFS_SCHEME:="http"}
 
 export LFS_LISTEN LFS_HOST LFS_CONTENTPATH LFS_ADMINUSER LFS_ADMINPASS LFS_CERT LFS_KEY LFS_SCHEME
 
