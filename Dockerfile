@@ -9,7 +9,7 @@ RUN yaourt -S --needed --noconfirm git-lfs-test-server-git
 
 # regenerate new ssl cert on every run
 ENV REGENERATE_SSL_CERT true
-add genSSLKey.sh /root/genSSLKey.sh
+ADD genSSLKey.sh /root/genSSLKey.sh
 
 # start server
 ADD run.sh /root/run.sh
