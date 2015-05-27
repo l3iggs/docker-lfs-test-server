@@ -19,8 +19,8 @@ set -o pipefail
 : ${LFS_HOST:="localhost:9999"}
 : ${LFS_METADB:=""}
 : ${LFS_CONTENTPATH:=content}
-: ${LFS_ADMINUSER:="l3iggs"}
-: ${LFS_ADMINPASS:="sggi3l"}
+: ${LFS_ADMINUSER:="admin"}
+: ${LFS_ADMINPASS:="admin"}
 : ${LFS_CERT:=""}
 : ${LFS_KEY:=""}
 : ${LFS_SCHEME:="http"}
