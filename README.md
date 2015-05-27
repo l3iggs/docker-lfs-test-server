@@ -28,8 +28,15 @@ Where `janedoe` is the user you created in the LFS server's web interface above 
   ```
 This will use LFS to track any files ending in `.psd`
 1. **[Optional] Stop the lfs-test-server instance**  
-`docker stop lfs`  
+
+  ```
+docker stop lfs
+```
 You can restart the container later with `docker start lfs`
 1. **[Optional] Delete the lfs-test-server instance (after stopping it)**  
-`docker rm lfs` <--WARNING: this will delete anything stored inside the container
+
+  ```
+docker rm lfs
+```
+WARNING: this will delete anything stored inside the container
 1. **Profit.**
