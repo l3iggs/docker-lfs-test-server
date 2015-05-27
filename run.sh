@@ -23,7 +23,7 @@ set -o pipefail
 : ${LFS_ADMINPASS:="admin"}
 : ${LFS_CERT:=""}
 : ${LFS_KEY:=""}
-: ${LFS_SCHEME:="http"}
+: ${LFS_SCHEME:="https"}
 
 [ "$REGENERATE_SSL_CERT" = true ] && LFS_CERT=/root/ssl/server.crt; LFS_KEY=/root/ssl/server.key; bash /etc/httpd/conf/genSSLKey.sh
 
