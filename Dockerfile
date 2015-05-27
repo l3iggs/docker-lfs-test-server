@@ -5,8 +5,8 @@ MAINTAINER l3iggs <l3iggs@live.com>
 RUN sudo pacman -Sy
 
 # install lfs-test-server
-RUN sudo pacman -S --needed --noconfirm git-lfs-test-server-git
+RUN yaourt -S --needed --noconfirm git-lfs-test-server-git
 
 # start server
 ADD run.sh /root/run.sh
-CMD ["sudo","-E","bash /root/run.sh"]
+CMD ["sudo","-E","bash","/root/run.sh"]
